@@ -1,0 +1,5 @@
+ru/itis/services/countries/dto/FlagDto.class
+ru/itis/services/countries/app/CountriesServiceApplication.class
+ru/itis/services/countries/controllers/CountriesController.class
+ru/itis/services/countries/service/CountriesService.class
+ru/itis/services/countries/service/CountriesServiceImpl.class

@@ -1,0 +1,54 @@
+version: '3.3'
+
+services:
+
+  cat-service:
+    build:
+      context: CatsService
+      dockerfile: Dockerfile
+    container_name: cat-service
+    ports:
+      - 8090:8090
+    depends_on:
+      - zuul-service
+      - service-registry-service
+
+  countries-service:
+    build:
+      context: CountriesService
+      dockerfile: Dockerfile
+    container_name: countries-service
+    ports:
+      - 8030:8030
+    depends_on: 
+      - zuul-service
+      - service-registry-service
+
+  user-info-service:
+    build:
+      context: UsersInfoService
+      dockerfile: Dockerfile
+    container_name: user-info-service
+    ports:
+      - 8040:8040
+    depends_on: 
+      - zuul-service
+      - service-registry-service
+
+  zuul-service:
+    build:
+      context: ZuulService
+      dockerfile: Dockerfile
+    container_name: zuul-service
+    depends_on: 
+      - service-registry-service
+    ports:
+      - 8080:8080
+
+  service-registry-service:
+    build:
+      context: ServiceRegistry
+      dockerfile: Dockerfile
+    container_name: service-registry-service
+    ports:
+      - 8761:8761

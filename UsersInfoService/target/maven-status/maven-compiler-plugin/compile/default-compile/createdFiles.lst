@@ -1,0 +1,5 @@
+ru/itis/services/info/dto/CatDto.class
+ru/itis/services/info/dto/FlagDto.class
+ru/itis/services/info/dto/InfoUserDto.class
+ru/itis/services/info/dto/InfoUserDto$InfoUserDtoBuilder.class
+ru/itis/services/info/app/UserInfoServiceApplication.class

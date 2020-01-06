@@ -1,0 +1,5 @@
+ru/itis/services/cats/service/CatsService.class
+ru/itis/services/cats/service/CatsServiceImpl.class
+ru/itis/services/cats/app/CatsServiceApplication.class
+ru/itis/services/cats/dto/CatDto.class
+ru/itis/services/cats/controllers/CatsUsersController.class
